@@ -5,9 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>supabase-front</title>
+    <link rel="stylesheet" href="src\main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hdt5zgf.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <form class="form" id="form">
+        <input type="text" id="form_title" placeholder="Titre" required>
+        <!-- <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required /> -->
+        <input type="text" id="form_studio" placeholder="Studio" required>
+        <input type="text" id="form_prod" placeholder="Productor" required>
+        <input type="text" id="form_year" placeholder="Year" required>
+        <input type="text" id="form_genre" placeholder="Genre" required>
+        <input type="text" id="form_actor" placeholder="Actors" required>
+        <button type="submit" id="button" >Ajouter</button>
+      </form>
+      
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

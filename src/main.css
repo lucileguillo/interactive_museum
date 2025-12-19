@@ -1,0 +1,58 @@
+
+body{
+    background: linear-gradient(-23deg, rgb(255, 255, 255), rgb(246, 249, 254));
+}
+
+#app{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.movie_card{
+    background-color: #08112e;
+    padding: 10px;
+    border-radius: 14px;
+    height: 30%;
+    width: 22%;
+}
+
+.movie_poster{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.creation_text{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.creation_text p{
+    color: grey;
+    font-size: 0.6rem;
+}
+
+h2{
+    font-family: "komet", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1rem;
+    color: rgb(141, 145, 197);
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+p{
+    font-family: "komet", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.7rem; 
+    color: white;
+    text-align: center;
+}
