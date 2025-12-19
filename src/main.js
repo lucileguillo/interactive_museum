@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import { act } from "react";
 
 class Home {
   constructor() {
@@ -40,6 +41,16 @@ class Home {
     const actorsValue = document.getElementById('form_actor').value;
     const buttonValue = document.getElementById('formbutton').value;
     console.log(titleValue)
+
+
+    const { data, error } = await supabase
+    .from('movie')
+    .insert([{titleValue, studioValue, prodValue, yearValue, genreValue, actorsValue, buttonValue}])
+
+    if (error) {
+      console.error(error);
+      return;
+    }
   }
 
   createMovie(element) {
